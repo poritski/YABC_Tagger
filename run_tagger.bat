@@ -1,0 +1,1 @@
+perl tagger.pl -i corpus.txt
