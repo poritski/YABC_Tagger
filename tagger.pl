@@ -99,7 +99,8 @@ if ($tagset_mask ne "none")
 		}
 	close ($tsmap);
 
-	open ($db, "<./base/db.txt") or die "No database file found. Make sure you haven't removed it accidentally.";
+	# open ($db, "<./base/db.txt") or die "No database file found. Make sure you haven't removed it accidentally.";
+	open ($db, "<./base/lemmata.txt") or die "No database file found. Make sure you haven't removed it accidentally.";
 	while (<$db>)
 		{
 		chomp;
@@ -111,7 +112,8 @@ if ($tagset_mask ne "none")
 	}
 else
 	{
-	open ($db, "<./base/db.txt") or die "No database file found. Make sure you haven't removed it accidentally.";
+	# open ($db, "<./base/db.txt") or die "No database file found. Make sure you haven't removed it accidentally.";
+	open ($db, "<./base/lemmata.txt") or die "No database file found. Make sure you haven't removed it accidentally.";
 	while (<$db>)
 		{
 		chomp;
